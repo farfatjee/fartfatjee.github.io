@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ #table01,th,td {
+  border : 1px solid lightblue;
+  border-collapse : collapse;
+  padding-left : 50px;
+
+ }
+ 
+ th{
+ 
+ text-align : left;
+ color:white;
+  }
+  
+</style>
+</head>
+
+
+<body id="body01" >
+<table id="table01"  >
+	<tr>
+		<th >roll no.</th>
+		<th>student name</th>
+		<th>class</th>
+	</tr>
+	<tr>
+		<td><a href="tableextend.html">1</a></td>
+		<td>rayhan</td>
+		<td>6 A</td>
+	</tr>
+	<tr>
+		<td><a href="tableextend2.html">2</a></td>
+		<td>pranav</td>
+		<td>6 B</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>john</td>
+		<td>6 C</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>amal</td>
+		<td>6 D</td>
+	</tr>
+</table>
+
+
+<button  onmouseenter="change('blue','green');" onmouseout="change('red','black'); " >HTML Tutorial</button>
+</body>
+
+<script>
+var count = 0;
+
+function change(color,bodyColor){
+
+
+	table1 = document.getElementById("table01");
+	//document.body.style.backgroundColor = bodyColor;
+	body1 = document.getElementById("body01");
+	
+
+	table1.style.backgroundColor = color;
+	body1.style.backgroundColor = bodyColor;
+}
+
+
+</script>
+
+
+</html>
